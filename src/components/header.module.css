@@ -1,0 +1,70 @@
+.linkHome6105a56d18905c16 {
+  position: relative;
+  width: 9.38rem;
+  height: 2.27rem;
+  object-fit: cover;
+  max-width: 9.38rem;
+}
+.divmenuIcon1LineTop {
+  position: relative;
+  background-color: var(--color-black);
+  width: 1.5rem;
+  height: 0.13rem;
+}
+.divmenuIcon1,
+.divmenuIcon1LineMiddlemar {
+  width: 1.5rem;
+  height: 0.88rem;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-7xs) var(--padding-0);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.divmenuIcon1 {
+  width: 3rem;
+  height: 3rem;
+  flex-direction: column;
+  padding: var(--padding-mini) var(--padding-xs);
+}
+.buttonMenu,
+.divnavbar1Container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.divnavbar1Container {
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.divnavbar1Containermargin,
+.header {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+}
+.divnavbar1Containermargin {
+  flex: 1;
+  padding: var(--padding-8xs) var(--padding-0) var(--padding-0);
+  justify-content: space-between;
+  min-width: 10.94rem;
+}
+.header {
+  background-color: var(--color-white);
+  width: 24.38rem;
+  padding: var(--padding-7xs-5) var(--padding-lgi-5);
+  justify-content: center;
+  min-height: 4rem;
+}
+@media screen and (max-width: 420px) {
+  .divnavbar1Container {
+    flex-direction: row;
+    gap: var(--gap-151xl);
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+}

@@ -92,8 +92,8 @@ const Interview = () => {
                   color="primary"
                   variant="outlined"
                   multiline
-                  label="label"
-                  placeholder="Textarea placeholder"
+                  label="Please enter"
+                  placeholder="Please enter"
                   margin="none"
                   value={inputText}
                   onChange={(event) => setInputText(event.target.value)}
@@ -105,13 +105,12 @@ const Interview = () => {
             <div className={styles.divwelcomeScreenTimetocomp}>
               <div className={styles.button}>
                 <Button
-                  className={styles.start}
                   variant="text"
                   color="primary"
                   endIcon={<Icon>done_sharp</Icon>}
                   onClick={(event) => handleRatingChange(event, inputText)}
                 >
-                  Start
+                  Next
                 </Button>
               </div>
             </div>

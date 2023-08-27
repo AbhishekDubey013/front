@@ -24,31 +24,28 @@ const Testpage = () => {
                   <div className={styles.heading2}>
                     <div className={styles.pleaseAnswerAContainer}>
                       <p className={styles.pleaseAnswerA}>
-                        Please answer a few questions
+                        Thats it, we have your responses
                       </p>
                       <p className={styles.pleaseAnswerA}>
-                        for your psychologist.
+                        after thorough review we will share reults with you
                       </p>
                     </div>
                     <div className={styles.pleaseAnswerAContainer}>
                       <p className={styles.pleaseAnswerA}>
-                        Your answers will be kept
+                        You can get your results on Whatsapp 
                       </p>
                       <p className={styles.pleaseAnswerA}>
-                        confidential, and only used to
+                        Text "0798" through your registered number
                       </p>
                       <p className={styles.pleaseAnswerA}>
-                        make sure we provide the
+                        to 9016315937 
                       </p>
                       <p className={styles.pleaseAnswerA}>
-                        right care for you.
+                        You can avail free consultation through same
                       </p>
                     </div>
                   </div>
                   <div className={styles.ptextwrapperScSc1f8vz90}>
-                    <div className={styles.byStartingThis}>
-                      By starting this survey, you consent to
-                    </div>
                   </div>
                 </div>
               </div>

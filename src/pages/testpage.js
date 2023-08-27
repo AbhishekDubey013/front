@@ -72,7 +72,6 @@ const Testpage = () => {
 
   <div className={styles.divwelcomeScreenStickyfoot}>
     <div className={styles.divwelcomeScreenTimetocomp}>
-      <img className={styles.svgIcon} alt="" src="/svg.svg" />
       <div className={styles.takes4Minutes}>Takes 4 minutes</div>
     </div>
   </div>

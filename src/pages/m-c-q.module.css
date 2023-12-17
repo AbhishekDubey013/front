@@ -188,7 +188,7 @@
 }
 .divcontainer {
   position: relative;
-  top: 50.09rem;
+  top: 20 rem;
   left: calc(50% - 175.25px);
   flex-direction: column;
   padding: 4rem var(--padding-0) var(--padding-base);

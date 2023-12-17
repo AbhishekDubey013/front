@@ -1,15 +1,13 @@
 .divbackgroundScSc1x0n4hqIcon {
-  position: absolute;
-  margin: 0 !important;
+  position: relative;
   height: 100%;
   width: 100vw;
-  top: 0;
+  top: 50px;
   right: 0;
   bottom: 0;
   left: 0;
   max-width: 100%;
   overflow: hidden;
-  max-height: 100%;
   object-fit: cover;
   z-index: 0;
 }
@@ -26,7 +24,7 @@
   position: relative;
   font-size: inherit;
   line-height: 1.75rem;
-  font-weight: 400;
+  font-weight: bolder;
   font-family: inherit;
 }
 .heading2 {
@@ -126,7 +124,7 @@
   position: relative;
 }
 .button {
-  position: absolute;
+  position: relative;
   top: 2rem;
   left: calc(50% - 44.72px);
   border-radius: var(--br-9xs);
@@ -136,7 +134,7 @@
   flex-direction: row;
   padding: var(--padding-sm-5) 1.16rem var(--padding-mini-5) 1.18rem;
   box-sizing: border-box;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   min-height: 3rem;
 }
@@ -183,4 +181,11 @@
 .interview {
   border-radius: var(--br-5xs);
   width: 100%;
+  height: 100%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

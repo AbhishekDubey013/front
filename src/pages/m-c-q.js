@@ -159,13 +159,6 @@ const MCQ = () => {
                 )}
               </form>
                 <div className={styles.divcontainer}>
-                  <div className={styles.divprogressBar}>
-                    <div className={styles.divtrack}>
-                      <div className={styles.span}>
-                        <div className={styles.div}>{currentQuestion + 1}</div>
-                      </div>
-                    </div>
-                  </div>
                   <div className={styles.divprogressText}>
                     <div className={styles.question}>{`Question `}</div>
                     <div className={styles.div1}>{currentQuestion + 1}</div>

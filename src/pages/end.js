@@ -9,12 +9,8 @@ const Testpage = () => {
   };
   return (
     <div className={styles.testpage}>
+       <video src='/videos/bl.mp4' autoPlay loop muted />
       <section className={styles.bodyMain}>
-        <img
-          className={styles.divbackgroundScSc1x0n4hqIcon}
-          alt=""
-          src="/divbackgroundsc--sc1x0n4hq1@2x.png"
-        />
         <div className={styles.section}>
           <div className={styles.divscreencontentwrapperSc}>
             <div className={styles.divscreencontentScSc1ndo}>

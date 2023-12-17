@@ -62,13 +62,8 @@ const Interview = () => {
   };
   return (
     <div className={styles.interview}>
-      <video src='/videos/bk.mp4' autoPlay loop muted />
+      <video src='/videos/bw.mp4' autoPlay loop muted />
       <section className={styles.bodyMain}>
-        <img
-          className={styles.divbackgroundScSc1x0n4hqIcon}
-          alt="img"
-          src="/divbackgroundsc--sc1x0n4hq1@2x.png"
-        />
         <form onSubmit={handleSubmit}>
           {currentQuestion < questions.length - 1 ? (
         <div className={styles.section}>

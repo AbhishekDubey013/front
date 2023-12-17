@@ -15,6 +15,9 @@ import End from "./pages/end";
 import { useEffect } from "react";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
+
 
 
 
@@ -82,7 +85,9 @@ function App() {
       <Route path="/interview" element={<Interview />} />
       <Route path="/gender" element={<Gender />} />
       <Route path="/end" element={<End />} />
+      <Route path="/cards" element={<Cards />} />
     </Routes>
+    <Footer/>
     </div>
   );
 }

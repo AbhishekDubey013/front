@@ -8,7 +8,10 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+        Join our mission to provide free psychological diagnostics and consultation for everyone
+        </p>
+        <p className='footer-subscription-text'>
+        If you’re experiencing an emergency and need immediate help, call suicide prevention helplines or go to the nearest hospital
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -68,7 +71,7 @@ function Footer() {
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>TRVL © 2023</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

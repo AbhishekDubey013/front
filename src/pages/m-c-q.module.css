@@ -1,0 +1,435 @@
+.takeOurQuick {
+  margin: 0;
+}
+.takeOurQuickContainer {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 3.2rem;
+  font-weight: 600;
+  font-family: inherit;
+}
+.divrtShowcase,
+.heading1 {
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-0) 2.24rem 0.02rem 2.26rem;
+  align-items: center;
+  justify-content: center;
+}
+.divrtShowcase {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #65bccf;
+  overflow: hidden;
+  padding: 4.24rem var(--padding-xl) 4.93rem;
+  box-sizing: border-box;
+  align-items: center;
+  min-height: 12.5rem;
+}
+.question1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 2.38rem;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 17.94rem;
+}
+.pseudo {
+  position: relative;
+  background-color: var(--color-gainsboro);
+  width: 3.75rem;
+  height: 0.25rem;
+}
+.heading3 {
+  width: 17.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+.iFindItContainer {
+  position: relative;
+  line-height: 1.5rem;
+  display: inline-block;
+  max-width: 17.94rem;
+}
+.itemmargin,
+.p {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.p {
+  width: 17.94rem;
+  justify-content: center;
+  font-size: var(--font-size-mid-6);
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-open-sans);
+}
+.itemmargin {
+  align-self: stretch;
+  padding: var(--padding-0) var(--padding-0) 1rem;
+  justify-content: flex-start;
+}
+.divcontent,
+.divquestionContainer,
+.list {
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+.list {
+  width: 17.94rem;
+  flex-direction: column;
+  padding: var(--padding-0) var(--padding-0) 0;
+  justify-content: center;
+}
+.divcontent,
+.divquestionContainer {
+  justify-content: flex-start;
+}
+.divcontent {
+  width: 17.94rem;
+  flex-direction: column;
+  padding: var(--padding-0) var(--padding-0) 0;
+  gap: 2rem;
+}
+.divquestionContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  background-color: var(--color-white);
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.25);
+  width: 21.94rem;
+  flex-direction: row;
+  padding: 3.56rem 2rem 2.31rem;
+}
+.link {
+  position: relative;
+  width: 3.13rem;
+  height: 3.13rem;
+  opacity: 0.3;
+}
+.div {
+  position: relative;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+.span {
+  position: absolute;
+  height: 240%;
+  top: -70%;
+  right: 0;
+  bottom: -70%;
+  border-radius: 100px;
+  background-color: var(--color-white);
+  border: 4px solid var(--color-steelblue);
+  box-sizing: border-box;
+  width: 3rem;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-9xs) 1.24rem var(--padding-9xs) 1.26rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.divprogressBar,
+.divtrack {
+  border-radius: var(--br-31xl);
+}
+.divtrack {
+  position: relative;
+  background-color: var(--color-steelblue);
+  width: 0.53rem;
+  height: 1.25rem;
+}
+.divprogressBar {
+  background-color: var(--color-gainsboro);
+  width: 17.52rem;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-0) 17rem var(--padding-0) var(--padding-0);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.div1,
+.question {
+  position: relative;
+  line-height: 1.59rem;
+  display: inline-block;
+  max-width: 21.91rem;
+}
+.div1 {
+  font-family: var(--font-quicksand);
+}
+.divcontainer,
+.divprogressText {
+  width: 21.91rem;
+  display: flex;
+  box-sizing: border-box;
+}
+.divprogressText {
+  flex-direction: row;
+  padding: var(--padding-0) var(--padding-0) 0.03rem;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.1rem;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray);
+  font-family: var(--font-open-sans);
+}
+.divcontainer {
+  position: relative;
+  top: 50.09rem;
+  left: calc(50% - 175.25px);
+  flex-direction: column;
+  padding: 4rem var(--padding-0) var(--padding-base);
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.94rem;
+  font-size: 1.2rem;
+  color: var(--color-steelblue);
+}
+.form {
+  position: relative;
+  width: 21.91rem;
+  height: 60.94rem;
+}
+.divrtMain {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 2.94rem 1.23rem var(--padding-26xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-quicksand);
+}
+.whenAnsweringTheContainer {
+  position: relative;
+  line-height: 2rem;
+  display: inline-block;
+  max-width: 20.03rem;
+}
+.p1,
+.pintro {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.pintro {
+  top: 0;
+}
+.p1 {
+  top: 8.94rem;
+}
+.thisTestWas {
+  font-weight: 600;
+}
+.adaptedFrom {
+  color: var(--color-darkgray);
+}
+.strongThisContainer {
+  color: var(--color-purple);
+}
+.mulhausersTheStructured,
+.strongThisContainer {
+  position: relative;
+  line-height: 1rem;
+}
+.emphasis {
+  position: absolute;
+  top: 24.5rem;
+  left: calc(50% - 144.41px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  font-size: var(--font-size-smi-8);
+  color: var(--color-darkgray);
+  font-family: var(--font-quicksand);
+}
+.divcustom {
+  position: relative;
+  width: 20.03rem;
+  height: 29.88rem;
+}
+.divrtMainbottom {
+  position: absolute;
+  width: 100%;
+  top: 66.69rem;
+  right: 0;
+  left: 0;
+  background-color: var(--color-whitesmoke);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-6xl) 2.17rem var(--padding-21xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.18rem;
+  color: var(--color-steelblue);
+}
+.heading2 {
+  position: absolute;
+  top: 4.94rem;
+  left: calc(50% - 95.41px);
+  line-height: 2.6rem;
+  font-weight: 500;
+  font-family: var(--font-quicksand);
+}
+.link0203 {
+  position: absolute;
+  top: 9.6rem;
+  left: calc(50% - 109.41px);
+  font-size: var(--font-size-13xl);
+  text-decoration: underline;
+  line-height: 2rem;
+  color: #eb6694;
+}
+.aFreeConfidentialContainer {
+  position: relative;
+  line-height: 2rem;
+  display: inline-block;
+  max-width: 20.06rem;
+}
+.p2 {
+  position: absolute;
+  width: 100%;
+  top: 13.6rem;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.18rem;
+  color: var(--color-steelblue);
+}
+.divcustom1 {
+  position: relative;
+  width: 20.03rem;
+  height: 27.6rem;
+}
+.heading21 {
+  top: 4.94rem;
+  left: calc(50% - 125.9px);
+  line-height: 2.6rem;
+  font-weight: 500;
+}
+.heading21,
+.linkView,
+.p3 {
+  position: absolute;
+}
+.linkView {
+  top: 9.6rem;
+  left: calc(50% - 95.9px);
+}
+.p3 {
+  width: 100%;
+  top: 13.91rem;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.18rem;
+  color: var(--color-steelblue);
+  font-family: var(--font-open-sans);
+}
+.divcustom2 {
+  position: relative;
+  width: 20.03rem;
+  height: 25.91rem;
+}
+.divrtContainer,
+.divrtGrid6 {
+  width: 23.16rem;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.divrtGrid6 {
+  border-top: 4px solid var(--color-whitesmoke);
+  flex-direction: row;
+  padding: var(--padding-10xl) var(--padding-6xl) var(--padding-21xl);
+  align-items: flex-start;
+  font-family: var(--font-quicksand);
+}
+.divrtContainer {
+  position: absolute;
+  top: 102.62rem;
+  left: calc(50% - 185.25px);
+  flex-direction: column;
+  padding: var(--padding-6xl) var(--padding-0) 0;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: var(--font-size-11xl-4);
+}
+.divrtMainbodySurround {
+  position: absolute;
+  width: 100%;
+  top: 15.61rem;
+  right: 0;
+  left: 0;
+  height: 192.88rem;
+  font-size: var(--font-size-13xl);
+  color: var(--color-purple);
+  font-family: var(--font-open-sans);
+}
+.frame,
+.frame1 {
+  position: relative;
+  left: 0;
+  width: auto;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.frame1 {
+  top: 11.43rem;
+  height: 182.14rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-white);
+  font-family: var(--font-quicksand);
+}
+.frame {
+  top: -11.56rem;
+  height: 231.63rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.mcq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* This will ensure that the container takes at least the full height of the viewport */
+  background-color: var(--color-white);
+  width: 100%;
+}
+

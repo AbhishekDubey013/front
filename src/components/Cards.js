@@ -7,7 +7,7 @@ function Cards() {
     <div>
       <video src='/videos/v2land.mp4' autoPlay loop muted />
     <div id="cards-section" className='cards'>
-      <h1>Check out these EPIC Destinations!</h1>
+      <h1>Check out our tests!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>

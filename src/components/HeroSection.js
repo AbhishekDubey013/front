@@ -26,14 +26,14 @@ function HeroSection() {
         >
           GET STARTED
         </Button>
-        <Button
+        {/* <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
           onClick={scrollToCards}
         >
           WATCH TRAILER <i className='far fa-play-circle' />
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

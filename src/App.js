@@ -5,7 +5,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import Testpage from "./pages/testpage";
-import ADHDGyan from "./pages/a-d-h-d-gyan";
 import LandingPage from "./pages/landing-page";
 import MCQ from "./pages/m-c-q";
 import TestOption from "./pages/test-option";

@@ -163,7 +163,7 @@ const MCQ = () => {
                     <div className={styles.question}>{`Question `}</div>
                     <div className={styles.div1}>{currentQuestion + 1}</div>
                     <div className={styles.question}>{` of `}</div>
-                    <div className={styles.div1}>12</div>
+                    <div className={styles.div1}>10</div>
                   </div>
                 </div>
               </div>

@@ -57,6 +57,7 @@ const RatingForm = () => {
   };
 
   const handleNextQuestion = () => {
+    e.preventDefault();
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion((prevQuestion) => prevQuestion + 1);
       setRatings({});
@@ -102,7 +103,7 @@ const RatingForm = () => {
                 <Button
                   variant="contained"
                   color="primary"
-                  type="button"
+                  type="submit"
                   onClick={handleNextQuestion}
                 >
                   Next

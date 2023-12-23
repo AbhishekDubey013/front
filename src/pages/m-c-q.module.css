@@ -64,7 +64,7 @@
 .p {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
 }
 .p {
   width: 17.94rem;

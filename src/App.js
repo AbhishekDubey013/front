@@ -40,10 +40,6 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/adhd-gyan":
-        title = "";
-        metaDescription = "";
-        break;
       case "/landing-page":
         title = "";
         metaDescription = "";
@@ -77,7 +73,6 @@ function App() {
       <Navbar/>
     <Routes>
       <Route path="/pretest" element={<Testpage />} />
-      <Route path="/adhd-gyan" element={<ADHDGyan />} />
       <Route path="/" element={<Home />} />
       <Route path="/mcq" element={<MCQ />} />
       <Route path="/test-option" element={<TestOption />} />

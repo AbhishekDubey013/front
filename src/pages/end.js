@@ -28,13 +28,10 @@ const Testpage = () => {
                     </div>
                     <div className={styles.pleaseAnswerAContainer}>
                       <p className={styles.pleaseAnswerA}>
-                        You can get your results on Whatsapp 
+                        You can get your results on Whatsapp No.
                       </p>
                       <p className={styles.pleaseAnswerA}>
-                        Text "0798" through your registered number
-                      </p>
-                      <p className={styles.pleaseAnswerA}>
-                        to 9016315937 
+                        which you provided
                       </p>
                       <p className={styles.pleaseAnswerA}>
                         You can avail free consultation through same

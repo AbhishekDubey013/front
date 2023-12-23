@@ -15,19 +15,19 @@ function Cards() {
               src='depresion.jpg'
               text='Do you feel a persistent sadness and emptiness? Give this test a try.'
               label='Depression'
-              path='/products'
+              path='/pretest'
             />
           <CardItem
               src='anxiety1.jpg'
               text='Do you feel overwhelmed with worry and fear? Try this diagnostic test.'
               label='Anxiety'
-              path='/services'
+              path='/pretest'
             />
             <CardItem
               src='PTSD.jpg'
               text='Experiencing flashbacks and severe anxiety from past trauma? This test can help.'
               label='PTSD'
-              path='/services'
+              path='/pretest'
             />
           </ul>
           <ul className='cards__items'>
@@ -41,13 +41,13 @@ function Cards() {
               src='addiction.jpg'
               text='Feel trapped in a cycle of craving and regret? This addiction test can guide you.'
               label='Addiction'
-              path='/sign-up'
+              path='/pretest'
             />
              <CardItem
               src='bipolar.jpg'
               text='Experiencing extreme mood swings? Our bipolar disorder test may provide insights.'
               label='Bipolar Disorder'
-              path='/sign-up'
+              path='/pretest'
             />
           </ul>
         </div>

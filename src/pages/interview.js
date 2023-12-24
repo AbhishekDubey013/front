@@ -96,6 +96,12 @@ const Interview = () => {
                   margin="none"
                   value={inputText}
                   onChange={(event) => setInputText(event.target.value)}
+                  onKeyDown={(event) => {
+                    if (event.key === 'Enter') {
+                      event.preventDefault(); // Prevent form submission on enter key
+                      handleRatingChange(event, inputText);
+                    }
+                  }}
                 />
               </div>
             </div>

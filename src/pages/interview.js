@@ -7,6 +7,7 @@ import { add_r } from '../redux/action';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 const questions = questionsData.questions;
+const currentTimeStamp = Date.now();
 const Interview = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();

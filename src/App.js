@@ -16,8 +16,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
-
-
+import lov from "./pages/gender"
 
 
 function App() {

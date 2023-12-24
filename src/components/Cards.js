@@ -47,7 +47,7 @@ function Cards() {
               src='bipolar.jpg'
               text='Experiencing extreme mood swings? Our bipolar disorder test may provide insights.'
               label='Bipolar Disorder'
-              path='/pretest'
+              path='/gender'
             />
           </ul>
         </div>

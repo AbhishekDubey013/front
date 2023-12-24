@@ -152,7 +152,6 @@ const MCQ = () => {
                       variant="contained"
                       color="primary"
                       type="submit"
-                      className={styles.itemmargin}
                     >
                       Submit
                     </Button>

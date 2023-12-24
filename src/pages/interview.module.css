@@ -190,6 +190,10 @@ video {
   object-fit: cover;
 }
 
+.custom-button {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
 @media screen and (max-width: 768px) {
   .button {
     position: relative;
@@ -209,7 +213,7 @@ video {
 
   .obFormslabel {
     width: 18.75rem;
-    height: 0rem;
+    height: 5rem;
     overflow: visible;
     flex-shrink: 0;
     text-align: left;

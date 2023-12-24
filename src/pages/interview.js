@@ -1,4 +1,4 @@
-import { TextField, Button, Icon } from "@mui/material";
+import { TextField, Icon } from "@mui/material";
 import styles from "./interview.module.css";
 import React, { useState,useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -6,6 +6,8 @@ import questionsData from '../components/personal.json';
 import { add_r } from '../redux/action';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import {Button} from '../components/Button';
+
 const questions = questionsData.questions;
 const currentTimeStamp = Date.now();
 const Interview = () => {
@@ -95,7 +97,7 @@ const Interview = () => {
                   placeholder="Please enter"
                   margin="none"
                   value={inputText}
-                  type='url'
+                  type='text'
                   onChange={(event) => setInputText(event.target.value)}
                   onKeyDown={(event) => {
                     if (event.key === 'Enter') {
@@ -109,12 +111,13 @@ const Interview = () => {
           </div>
           <div className={styles.divwelcomeScreenStickyfoot}>
             <div className={styles.divwelcomeScreenTimetocomp}>
-              <div className={styles.button}>
+              <div>
                 <Button
-                  variant="text"
-                  color="primary"
-                  endIcon={<Icon>done_sharp</Icon>}
-                  onClick={(event) => handleRatingChange(event, inputText)}
+                className='btns'
+                buttonStyle='btn--primary'
+                buttonSize='btn--large'
+                onClick={(event) => handleRatingChange(event, inputText)}
+                type = 'text'
                 >
                   Next
                 </Button>
@@ -170,7 +173,7 @@ const Interview = () => {
               variant="contained"
               color="primary"
               type="submit"
-              className={styles.itemmargin}
+              className={styles.divwelcomeScreenTimetocomp}
             >
               Submit
             </Button>

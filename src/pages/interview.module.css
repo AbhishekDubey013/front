@@ -14,10 +14,11 @@
 .pseudo {
   flex: 1;
   position: relative;
-  width: 19.38rem;
+  width: 10.38rem;
+  height: 1rem;
 }
 .pleaseAnswerA {
-  margin: 0;
+  margin: 40;
 }
 .pleaseAnswerAContainer {
   margin: 0;
@@ -65,7 +66,6 @@
 .divcontentwrapperinnerScS {
   display: flex;
   flex-direction: row;
-  padding: var(--padding-29xl) var(--padding-0);
   align-items: flex-start;
   justify-content: center;
 }
@@ -140,7 +140,7 @@
 }
 .divwelcomeScreenTimetocomp {
   position: relative;
-  width: 8.26rem;
+  width: 1rem;
   height: 5rem;
 }
 .divwelcomeScreenStickyfoot {
@@ -177,6 +177,7 @@
   color: var(--color-gray-100);
   font-family: var(--font-montserrat);
   width: auto;
+  bottom: 1rem;
 }
 .interview {
   border-radius: var(--br-5xs);
@@ -220,5 +221,15 @@ video {
     font-size: var(--font-size-sm);
     color: var(--color-black);
     font-family: var(--font-inter);
+  }
+
+  .divscreencontentScSc1ndo {
+    top:10rem;
+    height: 20.69rem;
+    max-width: 45rem;
+  }
+
+  .pleaseAnswerA {
+    margin: 10;
   }
 }

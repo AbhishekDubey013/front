@@ -133,24 +133,15 @@ const Interview = () => {
                   <div className={styles.heading2}>
                     <div className={styles.pleaseAnswerAContainer}>
                       <p className={styles.pleaseAnswerA}>
-                        Please answer a few questions
-                      </p>
-                      <p className={styles.pleaseAnswerA}>
-                        for your psychologist.
+                        Please answer a few questions for your psychologist.
                       </p>
                     </div>
                     <div className={styles.pleaseAnswerAContainer}>
                       <p className={styles.pleaseAnswerA}>
-                        Your answers will be kept
+                        Your answers will be kept confidential, and only used to
                       </p>
                       <p className={styles.pleaseAnswerA}>
-                        confidential, and only used to
-                      </p>
-                      <p className={styles.pleaseAnswerA}>
-                        make sure we provide the
-                      </p>
-                      <p className={styles.pleaseAnswerA}>
-                        right care for you.
+                        make sure we provide the right care for you.
                       </p>
                     </div>
                   </div>

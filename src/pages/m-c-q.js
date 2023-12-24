@@ -37,6 +37,7 @@ const MCQ = () => {
       navigate('/end');
       setRatings({});
       const mobileNumber = localStorage.getItem('mobile');
+      const PK = localStorage.getItem('PK');
     // Construct the data object
     try {
       console.log(mobileNumber)
@@ -46,7 +47,7 @@ const MCQ = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ mobileNumber, dataArray }),
+        body: JSON.stringify({ mobileNumber, dataArray, PK }),
       });
   
       if (!response.ok) {

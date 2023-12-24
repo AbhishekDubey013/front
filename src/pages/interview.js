@@ -18,6 +18,7 @@ const Interview = () => {
     console.log(newValue);
     if (currentQuestion === 0) {
       localStorage.setItem('mobile', newValue)
+      localStorage.setItem('PK', currentTimeStamp.toString());
     }
     setRatings((prevRatings) => ({
         ...prevRatings,
@@ -39,6 +40,7 @@ const Interview = () => {
       navigate('/mcq');
       setRatings({});
       const mobileNumber = localStorage.getItem('mobile');
+      const PK = localStorage.getItem('PK');
     // Construct the data object
     try {
       console.log(mobileNumber)
@@ -48,7 +50,7 @@ const Interview = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ mobileNumber, dataArray }),
+        body: JSON.stringify({ mobileNumber, dataArray,PK }),
       });
   
       if (!response.ok) {

@@ -142,13 +142,16 @@
   position: relative;
   width: 1rem;
   height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .divwelcomeScreenStickyfoot {
   display: flex;
   flex-direction: column;
   padding: var(--padding-5xs) 8.06rem;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   font-size: var(--font-size-sm);
 }
 .bodyMain,

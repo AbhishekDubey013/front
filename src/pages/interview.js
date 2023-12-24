@@ -160,6 +160,7 @@ const Interview = () => {
               </div>
               <div className={styles.pseudo} />
             <p>All questions answered. Thank you!</p>
+            <div className={styles.divwelcomeScreenStickyfoot}>
             <Button
               variant="contained"
               color="primary"
@@ -168,6 +169,7 @@ const Interview = () => {
             >
               Submit
             </Button>
+            </div>
           </>
         )}
       </form>

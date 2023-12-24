@@ -95,7 +95,7 @@ const Interview = () => {
                   placeholder="Please enter"
                   margin="none"
                   value={inputText}
-                  type="tel"
+                  type='url'
                   onChange={(event) => setInputText(event.target.value)}
                   onKeyDown={(event) => {
                     if (event.key === 'Enter') {

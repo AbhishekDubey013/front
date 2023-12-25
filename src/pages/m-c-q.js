@@ -88,7 +88,6 @@ const MCQ = () => {
                         <p className={styles.takeOurQuick}>
                         {questions[currentQuestion]}
                         </p>
-                        <p className={styles.takeOurQuick}>project</p>
                       </div>
                     </div>
                     <div className={styles.list}>

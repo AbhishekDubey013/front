@@ -58,7 +58,7 @@ const Interview = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ mobileNumber, dataArray,PK }),
+        body: JSON.stringify({ mobileNumber, dataArray,PK,moduleName }),
       });
   
       if (!response.ok) {

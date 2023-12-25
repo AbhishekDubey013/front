@@ -24,16 +24,16 @@ function Cards() {
               text='Do you feel overwhelmed with worry and fear? Try this diagnostic test.'
               label='Anxiety'
               path='/pretest'
-              moduleName='Depression'
-              moduleTestName='PHQ-9'
+              moduleName='Anxiety'
+              moduleTestName='Generalized Anxiety Disorder 7-item scale (GAD-7)'
             />
             <CardItem
               src='PTSD.jpg'
               text='Experiencing flashbacks and severe anxiety from past trauma? This test can help.'
               label='PTSD'
               path='/pretest'
-              moduleName='Depression'
-              moduleTestName='PHQ-9'
+              moduleName='PTSD'
+              moduleTestName='PTSD Checklist (PCL)'
             />
           </ul>
           <ul className='cards__items'>
@@ -50,16 +50,16 @@ function Cards() {
               text='Feel trapped in a cycle of craving and regret? This addiction test can guide you.'
               label='Addiction'
               path='/pretest'
-              moduleName='Depression'
-              moduleTestName='PHQ-9'
+              moduleName='Addiction'
+              moduleTestName='Alcohol Use Disorders Identification Test (AUDIT)'
             />
              <CardItem
               src='bipolar.jpg'
               text='Experiencing extreme mood swings? Our bipolar disorder test may provide insights.'
               label='Bipolar Disorder'
-              path='/gender'
-              moduleName='Depression'
-              moduleTestName='PHQ-9'
+              path='/pretest'
+              moduleName='BipolarDisorder'
+              moduleTestName='Mood Disorder Questionnaire (MDQ) for bipolar disorder'
             />
           </ul>
         </div>

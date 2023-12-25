@@ -49,6 +49,7 @@ const Interview = () => {
       setRatings({});
       const mobileNumber = localStorage.getItem('mobile');
       const PK = localStorage.getItem('PK');
+      const moduleName = localStorage.getItem('moduleName');
     // Construct the data object
     try {
       console.log(mobileNumber)

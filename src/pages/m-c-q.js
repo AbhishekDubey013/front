@@ -2,12 +2,21 @@ import { Button } from "@mui/material";
 import styles from "./m-c-q.module.css";
 import React, { useState,useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import questionsData from '../components/question.json';
+import questionsData from '../components/Objective.json';
 import { add_r } from '../redux/action';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-const questions = questionsData.questions;
 const MCQ = () => {
+  const [questions, setQuestions] = useState([]);
+  const [moduleTestName, setmt] = useState([]);
+  useEffect(() => {
+    // Fetch moduleName each time the component mounts or updates
+    const moduleName = localStorage.getItem('moduleName');
+    const moduleTestName = localStorage.getItem('moduleTestName');
+    const moduleQuestions = questionsData[moduleName] || [];
+    setQuestions(moduleQuestions);
+    setmt(moduleTestName);
+  }, []);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [ratings, setRatings] = useState({});
@@ -214,42 +223,13 @@ const MCQ = () => {
                     <span className={styles.adaptedFrom}> Adapted from</span>
                   </div>
                   <div className={styles.mulhausersTheStructured}>
-                    Mulhauser’s The Structured Adult ADHD Self-Test
+                    {moduleTestName}
                   </div>
                   <div className={styles.mulhausersTheStructured}>(SAAST)</div>
                 </div>
               </div>
             </div>
             <div className={styles.divrtContainer}>
-              <div className={styles.divcustom1}>
-                <div className={styles.heading2}>Need to talk?</div>
-                <div className={styles.link0203}>0203 326 9160</div>
-                <div className={styles.p2}>
-                  <div className={styles.aFreeConfidentialContainer}>
-                    <p className={styles.takeOurQuick}>
-                      A free, confidential call could quickly
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      help you get the support you need.
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      Your call will be answered by an
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      assistant psychologist who will listen
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      to your concerns before explaining
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      your options and suggesting the
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      most appropriate treatment.
-                    </p>
-                  </div>
-                </div>
-              </div>
               <div className={styles.divrtGrid6}>
                 <div className={styles.divcustom2}>
                   <div className={styles.heading21}>Take another test</div>

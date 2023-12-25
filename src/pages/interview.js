@@ -2,15 +2,20 @@ import { TextField, Icon } from "@mui/material";
 import styles from "./interview.module.css";
 import React, { useState,useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import questionsData from '../components/personal.json';
+import questionsData from '../components/Subjective.json';
 import { add_r } from '../redux/action';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import {Button} from '../components/Button';
-
-const questions = questionsData.questions;
 const currentTimeStamp = Date.now();
 const Interview = () => {
+  const [questions, setQuestions] = useState([]);
+  useEffect(() => {
+    // Fetch moduleName each time the component mounts or updates
+    const moduleName = localStorage.getItem('moduleName');
+    const moduleQuestions = questionsData[moduleName] || [];
+    setQuestions(moduleQuestions);
+  }, []);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [ratings, setRatings] = useState({});

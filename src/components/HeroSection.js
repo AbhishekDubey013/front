@@ -15,7 +15,7 @@ function HeroSection() {
   };
   return (
     <div className='hero-container'>
-      <video src='/videos/bf.mp4' autoPlay loop muted />
+      <video src='/videos/bf.webm' autoPlay loop muted />
       <h1>WELL BEING AWAITS</h1>
       <p>All our tests and diagnostic consultations are free. What are you waiting for?</p>
       <div className='hero-btns'>

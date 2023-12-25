@@ -46,7 +46,7 @@ function Cards() {
               moduleTestName='PHQ-9'
             />
             <CardItem
-              src='addiction.jpg'
+              src='Addiction.jpg'
               text='Feel trapped in a cycle of craving and regret? This addiction test can guide you.'
               label='Addiction'
               path='/pretest'

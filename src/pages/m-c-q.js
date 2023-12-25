@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 const MCQ = () => {
   const [questions, setQuestions] = useState([]);
+  console.log("Q ",questions);
   const [moduleTestName, setmt] = useState([]);
   useEffect(() => {
     // Fetch moduleName each time the component mounts or updates

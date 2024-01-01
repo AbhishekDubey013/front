@@ -78,7 +78,7 @@ const MCQ = () => {
             <div className={styles.heading1}>
               <h1 className={styles.takeOurQuickContainer}>
                 <p className={styles.takeOurQuick}>Take our quick</p>
-                <p className={styles.takeOurQuick}>ADHD test</p>
+                <p className={styles.takeOurQuick}>{moduleName} test</p>
               </h1>
             </div>
           </div>

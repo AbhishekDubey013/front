@@ -5,7 +5,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import Testpage from "./pages/testpage";
-import LandingPage from "./pages/landing-page";
 import MCQ from "./pages/m-c-q";
 import TestOption from "./pages/test-option";
 import Interview from "./pages/interview";
@@ -16,7 +15,6 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
-import lov from "./pages/gender"
 
 
 function App() {

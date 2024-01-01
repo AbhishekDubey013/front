@@ -10,6 +10,7 @@ const MCQ = () => {
   const [questions, setQuestions] = useState([]);
   console.log("Q ",questions);
   const [moduleTestName, setmt] = useState([]);
+  const [moduleName, setmn] = useState([]);
   useEffect(() => {
     // Fetch moduleName each time the component mounts or updates
     const moduleName = localStorage.getItem('moduleName');
@@ -17,6 +18,7 @@ const MCQ = () => {
     const moduleQuestions = questionsData[moduleName] || [];
     setQuestions(moduleQuestions);
     setmt(moduleTestName);
+    setmn(moduleName);
   }, []);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -79,6 +81,7 @@ const MCQ = () => {
               <h1 className={styles.takeOurQuickContainer}>
                 <p className={styles.takeOurQuick}>Take our quick</p>
                 <p className={styles.takeOurQuick}>{moduleName} test</p>
+                <p className={styles.thisTestWas}>The test is adapted from {moduleTestName}</p>
               </h1>
             </div>
           </div>
@@ -173,93 +176,6 @@ const MCQ = () => {
                     <div className={styles.div1}>{currentQuestion + 1}</div>
                     <div className={styles.question}>{` of `}</div>
                     <div className={styles.div1}>10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.divrtMainbottom}>
-              <div className={styles.divcustom}>
-                <div className={styles.pintro}>
-                  <div className={styles.whenAnsweringTheContainer}>
-                    <p className={styles.takeOurQuick}>
-                      When answering the above
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      questions please consider how they
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      have applied to you in the 6 months
-                    </p>
-                    <p className={styles.takeOurQuick}>or so.</p>
-                  </div>
-                </div>
-                <div className={styles.p1}>
-                  <div className={styles.whenAnsweringTheContainer}>
-                    <p className={styles.takeOurQuick}>
-                      This test will give an indication as to
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      whether you are experiencing the
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      most common symptoms of ADHD,
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      but it cannot replace a full
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      assessment nor should be used to
-                    </p>
-                    <p className={styles.takeOurQuick}>
-                      self diagnose or decide upon a
-                    </p>
-                    <p className={styles.takeOurQuick}>treatment plan.</p>
-                  </div>
-                </div>
-                <div className={styles.emphasis}>
-                  <div className={styles.strongThisContainer}>
-                    <span className={styles.thisTestWas}>
-                      This test was adapted from:
-                    </span>
-                    <span className={styles.adaptedFrom}> Adapted from</span>
-                  </div>
-                  <div className={styles.mulhausersTheStructured}>
-                    {moduleTestName}
-                  </div>
-                  <div className={styles.mulhausersTheStructured}>(SAAST)</div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.divrtContainer}>
-              <div className={styles.divrtGrid6}>
-                <div className={styles.divcustom2}>
-                  <div className={styles.heading21}>Take another test</div>
-                  <Button
-                    className={styles.linkView}
-                    variant="text"
-                    color="primary"
-                  >
-                    View all tests
-                  </Button>
-                  <div className={styles.p3}>
-                    <div className={styles.whenAnsweringTheContainer}>
-                      <p className={styles.takeOurQuick}>
-                        We have online mental health
-                      </p>
-                      <p className={styles.takeOurQuick}>
-                        quizzes for many conditions
-                      </p>
-                      <p className={styles.takeOurQuick}>
-                        including ADHD, autism, anxiety,
-                      </p>
-                      <p className={styles.takeOurQuick}>
-                        depression, PTSD, and more. Each
-                      </p>
-                      <p className={styles.takeOurQuick}>
-                        one should take no longer than five
-                      </p>
-                      <p className={styles.takeOurQuick}>minutes.</p>
-                    </div>
                   </div>
                 </div>
               </div>

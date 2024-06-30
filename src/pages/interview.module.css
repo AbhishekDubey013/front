@@ -20,6 +20,15 @@
 .pleaseAnswerA {
   margin: 40;
 }
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(4, auto);  /* 4 rows */
+  gap: 16px; /* Space between grid items */
+  height: 200px;
+}
+
 .pleaseAnswerAContainer {
   margin: 0;
   position: relative;

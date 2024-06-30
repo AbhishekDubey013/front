@@ -15,6 +15,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
+import Pdetails from "./pages/Pdetails"
 
 
 function App() {
@@ -45,6 +46,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+        case "/pde":
+          title = "";
+          metaDescription = "";
+          break;
       case "/test-option":
         title = "";
         metaDescription = "";
@@ -77,6 +82,7 @@ function App() {
       <Route path="/gender" element={<Gender />} />
       <Route path="/end" element={<End />} />
       <Route path="/cards" element={<Cards />} />
+      <Route path="/pde" element={<Pdetails />} />
     </Routes>
     <Footer/>
     </div>

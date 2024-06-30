@@ -209,7 +209,7 @@ const Buy = () => {
                 <Button
                   variant="contained"
                   size="small"
-                  onclick={handleSubmit}
+                  onClick={handleSubmit} 
                   color="success"
                 >
                   Submit

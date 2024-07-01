@@ -69,10 +69,21 @@ const Buy = () => {
 
   return (
     <>
-      <div className="container-md" style={{ width: "50%", marginTop: "0px" }}>
+      <div className="container-md" style={{ width: "50%", marginTop: "5px" }}>
         <form onSubmit={handleSubmit}>
           <div>
-            <div className="container-md" style={{ width: "200%", marginTop: "0px", display: "grid", gridTemplateColumns: "repeat(1fr, 1fr)", gridTemplateRows: "repeat(4, auto)", gap: "0px", height: "300px", background: 'rgba(255, 255, 255, 0.5)', backdropFilter: 'blur(5px)' }}>
+            {/* <div className="container-md" style={{ width: "200%", marginTop: "0px", display: "grid", gridTemplateColumns: "repeat(1fr, 1fr)", gridTemplateRows: "repeat(4, auto)", gap: "0px", height: "300px", background: 'rgba(255, 255, 255, 0.5)', backdropFilter: 'blur(5px)' }}> */}
+            <div className="container-md" style={{
+            width: "200%",
+            marginTop: "0px",
+            display: "grid",
+            gridTemplateColumns: "repeat(2, 1fr)",
+            gridTemplateRows: "repeat(5, auto)", // Added one more row for the button
+            gap: "0px",
+            height: "auto", // Adjusted to auto to accommodate content
+            background: 'rgba(255, 255, 255, 0.5)',
+            backdropFilter: 'blur(5px)'
+          }}>
               <FormControl required sx={{ m: 1, minWidth: 120 }}>
                 <InputLabel id="age-label">Age</InputLabel>
                 <Select
@@ -205,7 +216,14 @@ const Buy = () => {
                 </Select>
               </FormControl>
               {/* Centered Submit Button */}
-              <div style={{ gridRow: '1 / span 4', gridColumn: '3 / span 1', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              {/* <div style={{ gridRow: '1 / span 4', gridColumn: '3 / span 1', display: 'flex', alignItems: 'center', justifyContent: 'center' }}> */}
+              <div style={{
+              gridRow: '5', // Positioning in the last row
+              gridColumn: '1 / -1', // Span across all columns
+              display: 'flex',
+              justifyContent: 'center', // Centering the button horizontally
+              padding: '5px' // Add some padding for spacing
+            }}>
                 <Button
                   variant="contained"
                   size="small"

@@ -5,7 +5,7 @@ const Testpage = () => {
   const navigate = useNavigate();
   const handleJoinCommunity = () => {
     // Use the navigate function to navigate when the button is clicked
-    navigate('/pde');
+    navigate('/interview');
   };
   return (
     <div className={styles.testpage}>

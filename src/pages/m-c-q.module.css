@@ -4,10 +4,10 @@
 .takeOurQuickContainer {
   margin: 0;
   position: relative;
-  font-size: medium;
-  line-height: 1 rem;
+  font-size: 20px;
+  line-height: 0 rem;
   font-weight: 600;
-  font-family: inherit;
+  //font-family: inherit;
 }
 .divrtShowcase,
 .heading1 {

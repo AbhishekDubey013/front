@@ -4,8 +4,8 @@
 .takeOurQuickContainer {
   margin: 0;
   position: relative;
-  font-size: inherit;
-  line-height: 3.2rem;
+  font-size: medium;
+  line-height: 1 rem;
   font-weight: 600;
   font-family: inherit;
 }

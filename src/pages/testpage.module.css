@@ -126,8 +126,6 @@
 .section {
   flex-direction: column;
   z-index: 1;
-  font-size: 30px;
-  font-solid: 2;
 }
 .bodyMain,
 .testpage {

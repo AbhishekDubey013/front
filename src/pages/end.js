@@ -92,12 +92,12 @@ const Testpage = () => {
 
   return (
     <div className={styles.testpage}>
-      <video src='/videos/bl.mp4' autoPlay loop muted />
+      <video src='/videos/bk.mp4' autoPlay loop muted />
       <section className={styles.bodyMain}>
         {analysisResult ? (
           <div className={styles.section}>
             <h1 style={{ fontWeight: 'bold', color: 'black'}}>Analysis Results</h1>
-            <p style={{ fontWeight: 'bold', fontSize: '25px' }}>{analysisResult}</p>
+            <p style={{ fontWeight: 'bold', fontSize: '18px' }}>{analysisResult}</p>
             <Button variant="contained" color="primary" onClick={() => navigate('/interview')}>
               Go to Interview
             </Button>

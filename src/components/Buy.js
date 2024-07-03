@@ -12,8 +12,8 @@ const Buy = () => {
     gender: '',
     maritalStatus: '',
     age: '',
-    height: 0,
-    weight: 0,
+    height: '',
+    weight: '',
     employmentStatus: '',
     sleep: '',
     healthCondition: '',
@@ -55,8 +55,8 @@ const Buy = () => {
         gender: '',
         maritalStatus: '',
         age: '',
-        height: 0,
-        weight: 0,
+        height: '',
+        weight: '',
         employmentStatus: '',
         sleep: '',
         healthCondition: '',
@@ -94,7 +94,7 @@ const Buy = () => {
                   onChange={handleChange('age')}
                 >
                   <MenuItem value=""><em>None</em></MenuItem>
-                  {generateRangeItems(1, 100)}  {/* Generates range from 1 to 100 */}
+                  {generateRangeItems(14, 100)}  {/* Generates range from 1 to 100 */}
                 </Select>
               </FormControl>
 
@@ -145,7 +145,7 @@ const Buy = () => {
                   onChange={handleChange('height')}
                 >
                   <MenuItem value=""><em>None</em></MenuItem>
-                  {generateRangeItems(0, 200)} {/* Generates range from 0 to 200 */}
+                  {generateRangeItems(120, 250)} {/* Generates range from 0 to 200 */}
                 </Select>
               </FormControl>
 
@@ -160,7 +160,7 @@ const Buy = () => {
                   onChange={handleChange('weight')}
                 >
                   <MenuItem value=""><em>None</em></MenuItem>
-                  {generateRangeItems(0, 200)} {/* Generates range from 0 to 200 */}
+                  {generateRangeItems(40, 200)} {/* Generates range from 0 to 200 */}
                 </Select>
               </FormControl>
 

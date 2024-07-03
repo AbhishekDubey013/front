@@ -11,6 +11,12 @@
   object-fit: cover;
   z-index: 0;
 }
+.beautifulButton {
+  border-radius: 20px; /* Makes edges curved */
+  background-color: beige; /* Sets the background color to beige */
+  color: black; /* Sets the text color to black */
+  font-weight: bold; /* Makes text bold */
+}
 .pseudo {
   flex: 1;
   position: relative;

@@ -96,8 +96,8 @@ const Testpage = () => {
       <section className={styles.bodyMain}>
         {analysisResult ? (
           <div className={styles.section}>
-            <h1>Analysis Results</h1>
-            <p>{analysisResult}</p>
+            <h1 style={{ fontWeight: 'bold', color: 'black'}}>Analysis Results</h1>
+            <p style={{ fontWeight: 'bold', fontSize: '25px' }}>{analysisResult}</p>
             <Button variant="contained" color="primary" onClick={() => navigate('/interview')}>
               Go to Interview
             </Button>

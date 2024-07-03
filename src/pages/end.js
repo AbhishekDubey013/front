@@ -97,8 +97,7 @@ const Testpage = () => {
         {analysisResult ? (
           <div className={styles.section}>
             <h1>Analysis Results</h1>
-            <p>{analysisResult.analysisResult}</p>
-            <p>Results received on: {new Date(analysisResult.timestamp).toLocaleString()}</p>
+            <p>{analysisResult}</p>
             <Button variant="contained" color="primary" onClick={() => navigate('/interview')}>
               Go to Interview
             </Button>

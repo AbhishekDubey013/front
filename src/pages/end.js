@@ -96,11 +96,11 @@ const Testpage = () => {
       <section className={styles.bodyMain}>
         {analysisResult ? (
           <div className={styles.section}>
-            <h1 style={{ fontWeight: 'bold', color: 'black'}}>Analysis Results</h1>
+            <h1 style={{ fontWeight: 'bold', color: 'black', fontSize: '18px'}}>Analysis Results</h1>
             <p style={{ fontWeight: 'bold', fontSize: '18px' }}>{analysisResult}</p>
-            <Button variant="contained" color="primary" onClick={() => navigate('/interview')}>
+            {/* <Button variant="contained" color="primary" onClick={() => navigate('/interview')}>
               Go to Interview
-            </Button>
+            </Button> */}
           </div>
         ) : (
           <p>Loading results...</p>

@@ -38,7 +38,7 @@ const Buy = () => {
     console.log('Navigating to /interview');
     navigate('/interview');
     try {
-      const response = await fetch('http://localhost:5001/api/auth/userData', {
+      const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/userData', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

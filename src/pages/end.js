@@ -22,7 +22,7 @@ const Testpage = () => {
       };
 
       try {
-        const response = await fetch('http://localhost:5001/api/auth/results', requestOptions);
+        const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/results', requestOptions);
         const data = await response.json();
         if (data && response.ok) {
           setAnalysisResult(data.analysisResult);

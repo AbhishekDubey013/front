@@ -55,7 +55,7 @@ const Interview = () => {
     try {
       console.log(mobileNumber)
      console.log(dataArray)
-      const response = await fetch('http://localhost:5001/api/auth/pd', {
+      const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/pd', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

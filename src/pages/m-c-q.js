@@ -54,7 +54,7 @@ const MCQ = () => {
     try {
       console.log(mobileNumber)
      //console.log(dataArray)
-      const response = await fetch('http://localhost:5001/api/auth/AT', {
+      const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/AT', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

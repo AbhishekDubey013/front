@@ -170,7 +170,7 @@ const Interview = () => {
             <div className={styles.divwelcomeScreenStickyfoot}>
             <Button
               variant="contained"
-              color="primary"
+              color="secondary"
               type="submit"
               className={styles.divwelcomeScreenTimetocomp}
             >

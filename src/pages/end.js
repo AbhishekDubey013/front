@@ -58,11 +58,9 @@ const Testpage = () => {
           </div>
         ) : (
           <div>
-            <p style={{ fontWeight: 'bold', fontSize: '25px', marginBottom: '2px', marginTop: '200px' }}>We are processing your data ETA 90 secs</p>
+            <p style={{ fontWeight: 'bold', fontSize: '20px', marginBottom: '2px', marginTop: '200px' }}>We are processing your data ETA 90 secs</p>
             <Stack sx={{ width: '100%', color: 'grey.500' }} spacing={2}>
               <LinearProgress color="secondary" />
-              <LinearProgress color="success" />
-              <LinearProgress color="inherit" />
             </Stack>
             <div style={{ marginTop: '200px' }}></div>
           </div>

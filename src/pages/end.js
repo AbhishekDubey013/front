@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { Button } from "@mui/material";
 import styles from "./testpage.module.css";
 import { useNavigate } from "react-router-dom";
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 

@@ -5,6 +5,7 @@ import styles from "./testpage.module.css";
 import { useNavigate } from "react-router-dom";
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
+import Stack from '@mui/material/Stack';
 
 const Testpage = () => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const Testpage = () => {
       fetchData();
     }, 90000); // 90000 ms is 90 seconds
 
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, [phoneNumber]);
 
   return (
@@ -48,15 +49,23 @@ const Testpage = () => {
         {analysisResult ? (
           <div className={styles.section}>
             <h1 style={{ fontWeight: 'bold', color: 'black', fontSize: '18px', textAlign: 'center' }}>Analysis Results</h1>
-            <p style={{ fontWeight: 'bold', fontSize: '18px' }}>{analysisResult}</p>
+            <p style={{ fontWeight: 'bold', fontSize: '12px' }}>{analysisResult}</p>
+            <h1 style={{ fontWeight: 'bold', color: 'black', fontSize: '18px', textAlign: 'center' }}>Get free diagnostic consultation</h1>
+            <p style={{ fontWeight: 'bold', color: 'black', fontSize: '12px', textAlign: 'center' }}>You can enroll in by subscribing us and our team will reach out to you</p>
             {/* <Button variant="contained" color="primary" onClick={() => navigate('/interview')}>
               Go to Interview
             </Button> */}
           </div>
         ) : (
-          <Box sx={{ width: '100%' }}>
-            <LinearProgress />
-          </Box>
+          <div>
+            <p style={{ fontWeight: 'bold', fontSize: '25px', marginBottom: '2px', marginTop: '200px' }}>We are processing your data ETA 90 secs</p>
+            <Stack sx={{ width: '100%', color: 'grey.500' }} spacing={2}>
+              <LinearProgress color="secondary" />
+              <LinearProgress color="success" />
+              <LinearProgress color="inherit" />
+            </Stack>
+            <div style={{ marginTop: '200px' }}></div>
+          </div>
         )}
       </section>
     </div>

@@ -66,17 +66,28 @@ const Testpage = () => {
   const phoneNumber = `91${phoneNumber1}@c.us`;
 
   useEffect(() => {
-    fetch(`http://localhost:5001/api/auth/results/${phoneNumber}`)
-      .then(response => response.json())
-      .then(data => {
-        if (data) {
-          setAnalysisResult(data.analysisResult);
-        } else {
-          console.log("No results found");
+    const fetchData = async () => {
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ phoneNumber: phoneNumber })
+        };
+
+        try {
+            const response = await fetch('http://localhost:5001/api/auth/results', requestOptions);
+            const data = await response.json();
+            if (data && response.ok) {
+                setAnalysisResult(data.analysisResult);
+            } else {
+                console.log("No results found");
+            }
+        } catch (error) {
+            console.error("Failed to fetch results:", error);
         }
-      })
-      .catch(error => console.error("Failed to fetch results:", error));
-  }, [phoneNumber]);
+    };
+
+    fetchData();
+}, [phoneNumber]);
 
   return (
     <div className={styles.testpage}>

@@ -78,6 +78,7 @@ const Testpage = () => {
             const data = await response.json();
             if (data && response.ok) {
                 setAnalysisResult(data.analysisResult);
+                console.log(data.analysisResult)
             } else {
                 console.log("No results found");
             }

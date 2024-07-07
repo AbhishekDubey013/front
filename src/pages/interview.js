@@ -74,7 +74,7 @@ const Interview = () => {
   };
   return (
     <div className={styles.interview}>
-      <video src='/videos/bw.mp4' autoPlay loop muted />
+      <video className={styles.videoBackground} src='/videos/bw.mp4' autoPlay loop muted />
       <section className={styles.bodyMain}>
         <form onSubmit={handleSubmit}>
           {currentQuestion < questions.length - 1 ? (

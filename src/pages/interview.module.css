@@ -11,6 +11,16 @@
   object-fit: cover;
   z-index: 0;
 }
+
+.videoBackground {
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it's behind all other content */
+  pointer-events: none; /* Disable mouse and touch events */
+}  
 .beautifulButton {
   border-radius: 20px; /* Makes edges curved */
   background-color: beige; /* Sets the background color to beige */

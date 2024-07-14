@@ -5,7 +5,7 @@ const currentTimeStamp = Date.now();
 const Interview = () => {
   return (
     <div className={styles.interview}>
-      <video src='/videos/bk.mp4' autoPlay loop muted />
+      <video className={styles.videoBackground} src='/videos/bk.mp4' autoPlay loop muted />
       <section className={styles.bodyMain}>
         <form>
         <div className={styles.section}>

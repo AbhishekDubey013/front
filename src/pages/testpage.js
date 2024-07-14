@@ -10,7 +10,7 @@ const Testpage = () => {
   return (
     <div className={styles.testpage}>
       <section className={styles.bodyMain}>
-        <video src='/videos/bk.mp4' autoPlay loop muted />
+        <video className={styles.videoBackground} src='/videos/bk.mp4' autoPlay loop muted />
         <div className={styles.section}>
           <div className={styles.divscreencontentwrapperSc}>
             <div className={styles.divscreencontentScSc1ndo}>

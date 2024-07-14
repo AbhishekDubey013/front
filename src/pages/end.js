@@ -29,6 +29,7 @@ const Testpage = () => {
           console.log(data.analysisResult)
         } else {
           console.log("No results found");
+          setAnalysisResult("Sorry couldn't update right now as server is busy processing other request please log in bit later to view results or go premium");
         }
       } catch (error) {
         console.error("Failed to fetch results:", error);

@@ -1,9 +1,14 @@
 import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 function Footer() {
+  const navigate = useNavigate();
+  const [phone, setPhone] = useState('');
+  const handleClick = () => {
+    navigate('/login', { state: { phone } });
+  };
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
@@ -20,11 +25,13 @@ function Footer() {
           <form>
             <input
               className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
+              name='phone'
+              type='tel'
+              placeholder='Your Phone number'
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button buttonStyle='btn--outline' onClick={handleClick}>Subscribe</Button>
           </form>
         </div>
       </section>

@@ -16,6 +16,7 @@ import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import Pdetails from "./pages/Pdetails"
+import Buy from "./pages/Buy"
 
 
 function App() {
@@ -54,6 +55,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+        case "/login":
+          title = "";
+          metaDescription = "";
+          break;
     }
 
     if (title) {
@@ -83,6 +88,7 @@ function App() {
       <Route path="/end" element={<End />} />
       <Route path="/cards" element={<Cards />} />
       <Route path="/pde" element={<Pdetails />} />
+      <Route path="/login" element={<Buy />} />
     </Routes>
     <Footer/>
     </div>

@@ -3,7 +3,7 @@ import { useState } from 'react';
 const axios = require('axios');
 const moduleTestName = localStorage.getItem('moduleTestName');
 const moduleName = localStorage.getItem('moduleName');
-const Buy = () => {
+const Buy = (phone) => {
   const [otpSent, setOtpSent] = useState(false);
   const [otp, setOtp] = useState('');
   const [orderId, setorderId] = useState('');

@@ -106,7 +106,8 @@ const Buy = () => {
             </div>
           )}
           <button
-            type="submit"
+            type="click"
+            onClick={buyChai}
             className="btn btn-primary"
             disabled={verificationInProgress}
           >

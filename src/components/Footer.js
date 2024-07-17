@@ -1,7 +1,8 @@
-import React from 'react';
+
 import './Footer.css';
 import { Button } from './Button';
 import { Link,useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
 
 function Footer() {
   const navigate = useNavigate();

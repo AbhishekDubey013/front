@@ -15,14 +15,21 @@ const Testpage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ phoneNumber: phoneNumber })
-      };
+      // const requestOptions = {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify({ phoneNumber: phoneNumber })
+      // };
 
       try {
-        const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/results', requestOptions);
+        //const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/results', requestOptions);
+        const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/results', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({phoneNumber}),
+        });
         console.log(response)
         const data = await response.json();
         if (data && response.ok) {

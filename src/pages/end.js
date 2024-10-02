@@ -113,26 +113,35 @@ const Testpage = () => {
   const phoneNumber1 = localStorage.getItem('mobile');
   const phoneNumber = `91${phoneNumber1}@c.us`;
 
-  const fetchData = async () => {
-    try {
-      const response = await axios.get('https://mongodb-ttio.onrender.com/api/auth/results', {
-        params: { phoneNumber }
-      });
-      console.log(response);
-      const data = response.data;
-      if (data && response.status === 200) {
-        setAnalysisResult(data.analysisResult);
-        console.log(data.analysisResult);
-      } else {
-        console.log("No results found");
-        setAnalysisResult("Sorry couldn't update right now as server is busy processing other request please log in bit later to view results or go premium");
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('https://mongodb-ttio.onrender.com/api/auth/results', {
+          params: { phoneNumber }
+        });
+        console.log(response);
+        const data = response.data;
+        if (data && response.status === 200) {
+          setAnalysisResult(data.analysisResult);
+          console.log(data.analysisResult);
+        } else {
+          console.log("No results found");
+          setAnalysisResult("Sorry couldn't update right now as server is busy processing other request please log in bit later to view results or go premium");
+        }
+      } catch (error) {
+        console.error("Failed to fetch results:", error);
+        setAnalysisResult("Sorry couldn't fetch the results due to a server error. Please try again later.");
       }
-    } catch (error) {
-      console.error("Failed to fetch results:", error);
-      setAnalysisResult("Sorry couldn't fetch the results due to a server error. Please try again later.");
-    }
-  };
+    };  
 
+    const timer = setTimeout(() => {
+      fetchData();
+    }, 20000); // 90000 ms is 90 seconds
+
+    return () => clearTimeout(timer);
+  }, [phoneNumber]);
+
+  
   return (
     <div className={styles.testpage}>
       <video src='/videos/bk.mp4' autoPlay loop muted />
@@ -146,9 +155,6 @@ const Testpage = () => {
           </div>
         ) : (
           <div>
-            <Button variant="contained" color="primary" onClick={() => fetchData()}>
-              Get Results
-            </Button>
             <p style={{ fontWeight: 'bold', fontSize: '20px', marginBottom: '2px', marginTop: '200px' }}>We are processing your data ETA 20 secs</p>
             <Stack sx={{ width: '100%', color: 'grey.500' }} spacing={2}>
               <LinearProgress color="secondary" />

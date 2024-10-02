@@ -15,15 +15,8 @@ const Testpage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      // const requestOptions = {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ phoneNumber: phoneNumber })
-      // };
-
       try {
-        //const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/results', requestOptions);
-        const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/results', {
+        const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/getQas', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

@@ -13,36 +13,59 @@ const Testpage = () => {
   const phoneNumber1 = localStorage.getItem('mobile');
   const phoneNumber = `91${phoneNumber1}@c.us`;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/results', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({phoneNumber}),
-        });
-        console.log(response)
-        const data = await response.json();
-        if (data && response.ok) {
-          setAnalysisResult(data.analysisResult);
-          console.log(data.analysisResult)
-        } else {
-          console.log("No results found");
-          setAnalysisResult("Sorry couldn't update right now as server is busy processing other request please log in bit later to view results or go premium");
-        }
-      } catch (error) {
-        console.error("Failed to fetch results:", error);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/results', {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //         },
+  //         body: JSON.stringify({phoneNumber}),
+  //       });
+  //       console.log(response)
+  //       const data = await response.json();
+  //       if (data && response.ok) {
+  //         setAnalysisResult(data.analysisResult);
+  //         console.log(data.analysisResult)
+  //       } else {
+  //         console.log("No results found");
+  //         setAnalysisResult("Sorry couldn't update right now as server is busy processing other request please log in bit later to view results or go premium");
+  //       }
+  //     } catch (error) {
+  //       console.error("Failed to fetch results:", error);
+  //     }
+  //   };
+
+  //   const timer = setTimeout(() => {
+  //     fetchData();
+  //   }, 20000); // 90000 ms is 90 seconds
+
+  //   return () => clearTimeout(timer);
+  // }, [phoneNumber]);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch('https://mongodb-ttio.onrender.com/api/auth/results', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({phoneNumber}),
+      });
+      console.log(response)
+      const data = await response.json();
+      if (data && response.ok) {
+        setAnalysisResult(data.analysisResult);
+        console.log(data.analysisResult)
+      } else {
+        console.log("No results found");
+        setAnalysisResult("Sorry couldn't update right now as server is busy processing other request please log in bit later to view results or go premium");
       }
-    };
-
-    const timer = setTimeout(() => {
-      fetchData();
-    }, 20000); // 90000 ms is 90 seconds
-
-    return () => clearTimeout(timer);
-  }, [phoneNumber]);
+    } catch (error) {
+      console.error("Failed to fetch results:", error);
+    }
+  };
 
   return (
     <div className={styles.testpage}>
@@ -54,9 +77,9 @@ const Testpage = () => {
             <p style={{ fontWeight: 'bold', fontSize: '12px' }}>{analysisResult}</p>
             <h1 style={{ fontWeight: 'bold', color: 'black', fontSize: '18px', textAlign: 'center' }}>Get free diagnostic consultation</h1>
             <p style={{ fontWeight: 'bold', color: 'black', fontSize: '12px', textAlign: 'center' }}>You can enroll in by subscribing us and our team will reach out to you</p>
-            {/* <Button variant="contained" color="primary" onClick={() => navigate('/interview')}>
-              Go to Interview
-            </Button> */}
+            <Button variant="contained" color="primary" onClick={() => fetchData()}>
+              Get Results
+            </Button>
           </div>
         ) : (
           <div>

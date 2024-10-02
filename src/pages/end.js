@@ -77,12 +77,12 @@ const Testpage = () => {
             <p style={{ fontWeight: 'bold', fontSize: '12px' }}>{analysisResult}</p>
             <h1 style={{ fontWeight: 'bold', color: 'black', fontSize: '18px', textAlign: 'center' }}>Get free diagnostic consultation</h1>
             <p style={{ fontWeight: 'bold', color: 'black', fontSize: '12px', textAlign: 'center' }}>You can enroll in by subscribing us and our team will reach out to you</p>
-            <Button variant="contained" color="primary" onClick={() => fetchData()}>
-              Get Results
-            </Button>
           </div>
         ) : (
           <div>
+            <Button variant="contained" color="primary" onClick={() => fetchData()}>
+              Get Results
+            </Button>
             <p style={{ fontWeight: 'bold', fontSize: '20px', marginBottom: '2px', marginTop: '200px' }}>We are processing your data ETA 20 secs</p>
             <Stack sx={{ width: '100%', color: 'grey.500' }} spacing={2}>
               <LinearProgress color="secondary" />
